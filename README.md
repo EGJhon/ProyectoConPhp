@@ -1,2 +1,2 @@
 # ProyectoConPhp
- este preceto pretenece a un examen de programación
+ este proyecto pretenece a un examen de programación
