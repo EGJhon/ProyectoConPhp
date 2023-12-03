@@ -35,7 +35,7 @@
                   </table>';
                 } 
                 else{
-                   echo' <div class="alert alert-danger" role="alert">
+                  echo' <div class="alert alert-danger" role="alert">
                     el ID '.$cod.' no se encuentra en la Base de datos!
                   </div>';
                 }
