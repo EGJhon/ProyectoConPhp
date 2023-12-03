@@ -1,7 +1,3 @@
-<?php
-session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -35,11 +31,15 @@ session_start();
 
     </head>
     <body >
-        <?php 
-        if (isset($_SESSION['estado'])) {
-            $estado = $_SESSION['estado'];
-            echo '<script>alert("' . $estado . '");</script>';
-        }
+        <?php
+            session_start();
+            if (isset($_SESSION['estado'])) {
+                if ($_SESSION['estado']!= 1) {
+                    $estado = $_SESSION['estado'];
+                    echo '<script>alert("' . $estado . '");</script>';
+                    unset($_SESSION['estado']);
+                }
+            }
         ?>
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #FDEBD0;">
